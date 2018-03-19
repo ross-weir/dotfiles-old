@@ -12,10 +12,16 @@ set number
 " Key bindings
 map <C-n> :NERDTreeToggle<CR>
 
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
+
 call plug#begin('~/.config/nvim/plugged')
 
+"Plug 'jelera/vim-javascript-syntax'
+Plug 'othree/yajs.vim'
+"Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'jiangmiao/auto-pairs'
 Plug 'w0rp/ale'
-Plug 'mklabs/split-term.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'ericbn/vim-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -27,3 +33,4 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+let g:ale_linters = { 'javascript': ['eslint'] }
