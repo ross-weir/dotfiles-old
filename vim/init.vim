@@ -16,6 +16,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'ternjs/tern_for_vim'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 Plug 'editorconfig/editorconfig-vim'
 "Plug 'jelera/vim-javascript-syntax'
@@ -23,6 +24,7 @@ Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx'
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
 Plug 'w0rp/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'ericbn/vim-solarized'
@@ -34,6 +36,7 @@ call plug#end()
 " General settings
 set termguicolors
 set number
+set relativenumber
 
 " Key bindings
 map <C-n> :NERDTreeToggle<CR>
