@@ -16,6 +16,8 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'SirVer/ultisnips'
+Plug 'ross-weir/vim-snippets'
 Plug 'Yggdroot/indentLine'
 Plug 'ternjs/tern_for_vim'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
@@ -38,6 +40,7 @@ call plug#end()
 set termguicolors
 set number
 set relativenumber
+let g:my_snippet_manager = 'ultisnips'
 
 " Key bindings
 map <C-n> :NERDTreeToggle<CR>
@@ -59,3 +62,11 @@ let g:jsx_ext_required = 0
 let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 let g:deoplete#enable_at_startup = 1
+
+" ultisnips settings
+let g:UltiSnipsSnippetsDir = '~/.config/nvim/plugged/vim-snippets/UltiSnips'
+let g:UltiSnipsSnippetDirectories = 'UltiSnips'
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
+let g:UltiSnipsUsePythonVersion = 3
