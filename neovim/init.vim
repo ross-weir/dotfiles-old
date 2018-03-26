@@ -16,6 +16,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'mhinz/vim-startify'
 Plug 'SirVer/ultisnips'
 Plug 'ross-weir/vim-snippets'
 Plug 'Yggdroot/indentLine'
@@ -44,6 +45,8 @@ let g:my_snippet_manager = 'ultisnips'
 
 " Key bindings
 map <C-n> :NERDTreeToggle<CR>
+nnoremap <leader>y "+y
+vnoremap <leader>y "+y
 
 " Auto commands
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 expandtab
