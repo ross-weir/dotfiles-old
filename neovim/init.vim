@@ -16,6 +16,8 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
 Plug 'SirVer/ultisnips'
 Plug 'ross-weir/vim-snippets'
@@ -42,6 +44,7 @@ set termguicolors
 set number
 set relativenumber
 let g:my_snippet_manager = 'ultisnips'
+let mapleader = ","
 
 " Key bindings
 map <C-n> :NERDTreeToggle<CR>
