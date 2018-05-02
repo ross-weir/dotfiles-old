@@ -7,10 +7,10 @@
 [alias]
   aa = add .
   br = branch
-  ci = commit
+  ct = commit
   cb = rev-parse --abbrev-ref HEAD # current branch
   co = checkout
-  ph = push
+  pu = push
   org = origin
   pl = pull
   pob = push origin cb
