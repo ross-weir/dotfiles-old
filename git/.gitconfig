@@ -6,6 +6,7 @@
 
 [alias]
   aa = add .
+  au = add -u
   br = branch
   ct = commit
   co = checkout
