@@ -74,17 +74,9 @@ imap <down> <nop>
 imap <left> <nop>
 imap <up> <nop>
 
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
-set t_8f=\[[38;2;%lu;%lu;%lum
-set t_8b=\[[48;2;%lu;%lu;%lum
-
 " General settings
 colorscheme solarized8
 set background=dark
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
-set termguicolors
 set number
 set relativenumber
 set autoindent
@@ -128,6 +120,9 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 
 let g:deoplete#enable_at_startup = 1
 
+let g:airline_theme='onedark'
+let g:airline_solarized_bg='dark'
+let g:airline_powerline_fonts=1
 " ultisnips settings
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/plugged/vim-snippets/UltiSnips'
 let g:UltiSnipsSnippetDirectories = 'UltiSnips'
